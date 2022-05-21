@@ -22,16 +22,91 @@
                 <a class="font-medium text-sm after:border-brand-pink after:transition-all after:duration-[340ms] after:ease-in-out after:border-t-[3px] after:scale-x-0 hover:after:scale-x-100 after:block" href="resources.html#">Resources</a>
                 <a class="font-medium text-sm after:border-brand-pink after:transition-all after:duration-[340ms] after:ease-in-out after:border-t-[3px] after:scale-x-0 hover:after:scale-x-100 after:block" href="contact.html#">Contact</a>
             </div>
-            <div class="flex gap-7">
+            <div class="flex gap-7 items-center">
                 <button class="font-medium text-sm border border-brand-pink rounded-[60px] px-12 py-3 text-brand-pink hover:bg-brand-pink hover:text-white transition-all duration-150 ease-linear hidden sm:block">
                     Donate
                 </button>
-                <img class="w-10" src="images/hamburger.svg">
+                <span onclick="openMenu()" class="material-symbols-outlined text-brand-pink !text-[42px] cursor-pointer">
+                    menu
+                </span>
+                <!-- <img class="w-10" src="images/hamburger.svg"> -->
             </div>
         </nav>
+        <div id="menu" class="bg-brand-purple font-montserrat text-white z-[999] w-0 h-full fixed right-0 top-0 overflow-hidden transition-all duration-500 flex flex-col justify-center">
+            <a class="absolute top-3 right-8 hover:cursor-pointer" onclick="closeMenu()">
+                <span class="material-symbols-outlined !text-4xl">
+                    close
+                </span>
+            </a>
+            <ul class="ml-14 my-auto mobile-nav-items opacity-100 disappear flex flex-col items-start gap-[30px]">
+                <li class="font-semibold text-sm relative">
+                    <a class="flex flex-row gap-1 before:absolute hover:before:bg-brand-pink before:w-8 before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:bg-brand-purple group" href="index.html#">
+                        Home
+                        <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all ease-out duration-[450ms]">
+                            trending_flat
+                        </span>
+                    </a>
+                </li>
+                <li class="font-semibold text-sm relative sm:flex hidden">
+                    <a class="flex flex-row gap-1 before:absolute hover:before:bg-brand-pink before:w-8 before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:bg-brand-purple group" href="about.html#">
+                        About
+                        <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all ease-out duration-[450ms]">
+                            trending_flat
+                        </span>
+                    </a>
+                </li>
+                <li class="font-semibold text-sm relative flex md:hidden">
+                    <a class="flex flex-row gap-1 before:absolute hover:before:bg-brand-pink before:w-8 before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:bg-brand-purple group" href="community.html#">
+                        Programmes
+                        <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all ease-out duration-[450ms]">
+                            trending_flat
+                        </span>
+                    </a>
+                </li>
+                <li class="font-semibold text-sm relative">
+                    <a class="flex flex-row gap-1 before:absolute hover:before:bg-brand-pink before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] before:w-full before:bg-brand-pink" href="blog.html#">
+                        Join Our Community
+                        <span class="material-symbols-outlined">
+                            trending_flat
+                        </span>
+                    </a>
+                </li>
+                <li class="font-semibold text-sm relative flex">
+                    <a class="flex flex-row gap-1 before:absolute hover:before:bg-brand-pink before:w-8 before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:bg-brand-purple group" href="resources.html#">
+                        Blog
+                        <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all ease-out duration-[450ms]">
+                            trending_flat
+                        </span>
+                    </a>
+                </li>
+                <li class="font-semibold text-sm relative flex">
+                    <a class="flex flex-row gap-1 before:absolute hover:before:bg-brand-pink before:w-8 before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:bg-brand-purple group" href="contact.html#">
+                        Resources
+                        <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all ease-out duration-[450ms]">
+                            trending_flat
+                        </span>
+                    </a>
+                </li>
+                <li class="font-semibold text-sm relative flex">
+                    <a class="flex flex-row gap-1 before:absolute hover:before:bg-brand-pink before:w-8 before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:bg-brand-purple group" href="contact.html#">
+                        Contact
+                        <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all ease-out duration-[450ms]">
+                            trending_flat
+                        </span>
+                    </a>
+                </li>
+                <li class="font-semibold text-sm relative">
+                    <a class="flex flex-row gap-1" href="donate.html#">
+                        <button class="bg-brand-pink text-white border-2 border-white hover:bg-white hover:border-brand-pink hover:text-brand-pink px-12 py-3 text-sm font-semibold rounded-xl transition-all hover:transition-all duration-300 !hover:duration-250">
+                            <a href="#">Donate</a>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main class="xs:px-10 px-6 sm:px-12 md:px-16 mt-14 lg:grid lg:grid-cols-2 mb-40">
-        <div class="text-sm lg:pr-14">
+        <div class="text-sm lg:pr-14 mb-20 lg:mb-0">
             <h1 class="font-bold text-3xl sm:text-[42px] lg:text-5xl leading-[50px] lg:leading-[60px] text-brand-purple bg-brand-pink bg-clip-text" style="-webkit-text-stroke: 0.5px #FC278F">Become a member alongside other <span class="text-brand-pink">successful women</span></h1>
             <p class="mt-7 font-semibold">Benefits of becoming a member</p>
             <p class="font-normal mt-3 mb-7">Paid WISCAR membership entitles members to exclusive discounts and first information on the following;</p>
@@ -65,7 +140,7 @@
             <img class="mt-10" src="images/payment.svg">
         </div>
     </main>
-    <footer class="py-16 px-5 sm:px-8 md:px-14 lg:px-20 bg-[#373737] flex flex-wrap md:grid md:grid-cols-12 gap-16 text-white sm:justify-evenly text-sm">
+    <footer class="py-16 px-5 sm:px-8 md:px-14 lg:px-20 bg-[#373737] flex flex-wrap md:grid md:grid-cols-12 gap-16 text-white text-sm">
         <div class="text-sm col-span-full max-w-full md:col-span-9 lg:col-span-5">
             <img class="mb-6" src="images/logo-light.svg">
             <p>The foundation of WISCAR was inspired by a keenly felt societal need. During her long professional and corporate career the founder, Mrs Amina Oyagbola, constantly recognized a gaping need for an institutional framework that would provide to professional women inspiration, motivation, guidance, and support to help them better navigate their different career pathways. Learn More</p>

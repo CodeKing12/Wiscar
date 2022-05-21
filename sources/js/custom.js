@@ -1,5 +1,5 @@
 function openMenu() {
-    document.getElementById("menu").style.width = "250px";
+    document.getElementById("menu").style.width = "300px";
     nav.classList.add("nav-active");
     setTimeout(function(){document.querySelector(".mobile-nav-items").classList.remove("disappear");}, 400);
     document.querySelector(".menu-icon").setAttribute("onclick", "closeMenu()");
