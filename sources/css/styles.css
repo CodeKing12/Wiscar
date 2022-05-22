@@ -571,6 +571,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 3.5rem;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.mr-3{
+  margin-right: 0.75rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -609,6 +633,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-full{
   max-width: 100%;
+}
+
+.max-w-sm{
+  max-width: 24rem;
+}
+
+.max-w-md{
+  max-width: 28rem;
+}
+
+.max-w-lg{
+  max-width: 32rem;
 }
 
 .cursor-pointer{
@@ -669,6 +705,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-1{
   gap: 0.25rem;
+}
+
+.gap-20{
+  gap: 5rem;
 }
 
 .overflow-hidden{
@@ -805,12 +845,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 8rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-14{
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .pl-3{
   padding-left: 0.75rem;
 }
 
 .font-inter{
   font-family: Inter, sans-serif;
+}
+
+.font-kalam{
+  font-family: Kalam, cursive;
 }
 
 .text-sm{
@@ -846,6 +900,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 42px !important;
 }
 
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-normal{
   font-weight: 400;
 }
@@ -862,8 +921,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
 }
 
+.font-light{
+  font-weight: 300;
+}
+
 .leading-\[50px\]{
   line-height: 50px;
+}
+
+.leading-\[30px\]{
+  line-height: 30px;
+}
+
+.leading-7{
+  line-height: 1.75rem;
 }
 
 .text-brand-pink{
