@@ -636,6 +636,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: block;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 .flex{
   display: flex;
 }
@@ -658,6 +662,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-16{
   height: 4rem;
+}
+
+.h-\[55px\]{
+  height: 55px;
+}
+
+.h-\[65px\]{
+  height: 65px;
+}
+
+.h-\[62px\]{
+  height: 62px;
 }
 
 .w-10{
@@ -989,6 +1005,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 3.5rem;
 }
 
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+
 .font-inter{
   font-family: Inter, sans-serif;
 }
@@ -1043,6 +1067,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[42px\]{
   font-size: 42px;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-normal{
@@ -1561,6 +1590,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:items-start{
+    align-items: flex-start;
+  }
+
   .lg\:gap-20{
     gap: 5rem;
   }
@@ -1669,5 +1702,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xs\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1400px){
+  .xxl\:gap-20{
+    gap: 5rem;
+  }
+
+  .xxl\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 }
