@@ -14,3 +14,11 @@ function closeMenu() {
     document.querySelector(".menu-icon").setAttribute("onclick", "openMenu()");
     document.querySelector("body").style.overflow = "scroll";
 }
+
+const swiper = new Swiper('.news-swiper', {
+    speed: 400,
+    spaceBetween: 20,
+    slidesPerView: 'auto',
+    initialSlide: 0,
+});
+  
