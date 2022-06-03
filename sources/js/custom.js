@@ -15,11 +15,35 @@ function closeMenu() {
     document.querySelector("body").style.overflow = "scroll";
 }
 
+
+
+function openDashMenu() {
+  document.getElementById("dash-menu").classList.add("show-dash");
+  document.getElementById("dash-menu").classList.remove("remove-dash");
+} 
+
+function closeDashMenu() {
+  document.getElementById("dash-menu").classList.remove("show-dash");
+  document.getElementById("dash-menu").classList.add("remove-dash");
+}
+
+if (window.innerWidth <= 1200) {
+  closeDashMenu();
+} else {
+  openDashMenu();
+}
+
 const swiper = new Swiper('.news-swiper', {
     speed: 400,
     spaceBetween: 20,
     slidesPerView: 'auto',
     initialSlide: 0,
+    rewind: true,
+    navigation: {
+      prevEl: '.prev-news',
+      nextEl: '.next-news',
+    }
+    // effect: 'fade'
 });
 
   

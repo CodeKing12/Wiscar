@@ -70,3 +70,19 @@ i {
     color: white;
     font-weight: bold;
 }
+
+.remove-dash {
+    transform: translateX(-100%);
+    transition: all 0.2s ease-in-out;
+}
+
+.show-dash {
+    transform: translateX(0);
+    transition: all 0.2s ease-out;
+}
+
+@media (max-width: 992px) {
+    #dash-menu {
+        transform: translateX(-100%);
+    }
+}

@@ -13,8 +13,9 @@
 </head>
 <body class="font-inter font-normal bg-white text-black text-base">
     <main class="flex">
-        <div class="bg-black min-w-72 pt-10 pb-44 px-5">
-            <img class="w-52 mb-[90px]" src="images/logo.svg">
+        <div id="dash-menu" class="bg-black h-full z-10 fixed w-[250px] pt-10 pb-44 px-5 overflow-scroll">
+            <i onclick="closeDashMenu()" class="fa-solid fa-rectangle-xmark !block w-fit ml-auto hover:text-white text-4xl cursor-pointer text-brand-pink mb-5 duration-200 ease-in-out"></i>
+            <img class="w-52 mb-20" src="images/logo.svg">
             <div class="flex flex-col gap-5 mb-36 w-52">
                 <a class="cursor-pointer flex group gap-[14px] bg-brand-pink hover:bg-white text-white hover:text-brand-pink hover:duration-300 hover:ease-out py-5 px-9 font-bold rounded-[75px] duration-200 transition-all ease-in">
                     <i class="fa-solid fa-house-chimney"></i>
@@ -47,8 +48,9 @@
                 Logout
             </a>
         </div>
-        <div class="w-full px-10 py-9">
-            <div class="flex justify-between">
+        <div class="main-page w-full px-5 lg:px-8 xl:px-10 py-9 xl:ml-[250px]">
+            <div class="flex justify-between items-center">
+                <i onclick="openDashMenu()" class="material-symbols-outlined cursor-pointer !text-4xl text-brand-pink">menu</i>
                 <form class="w-fit relative">
                     <input class="rounded-[80px] text-sm px-10 pr-14 py-4 bg-[#ffefe] w-[390px] h-[58px] shadow-[0px_3px_10px_rgba(0,0,0,0.08)] outline-none focus:border-brand-pink border-2 border-transparent ease duration-200" type="text" placeholder="Search Anything">
                     <img class="absolute right-9 top-1/2 translate-x-1/2 -translate-y-1/2" src="images/Search.svg">
@@ -65,9 +67,15 @@
                 <p class="text-lg mb-5">Welcome Back, <span class="font-bold">Sophie!</span></p>
                 <div class="flex gap-7">
                     <div class="bg-brand-purple w-9/12 pt-7 text-white rounded-3xl px-7 pb-6">
-                        <h6 class="font-bold text-lg mb-4">Top News Box</h6>
+                        <div class="relative flex justify-between items-center mb-4">
+                            <h6 class="font-bold text-lg">Top News Box</h6>
+                            <div class="flex gap-2">
+                                <div class="prev-news w-6 h-6 flex justify-center items-center cursor-pointer rounded-full border-white border-2"><img class="w-2 rotate-180" src="images/right.svg" /></div>
+                                <div class="next-news w-6 h-6 flex justify-center items-center cursor-pointer rounded-full border-white border-2"><img class="w-2" src="images/right.svg" /></div>
+                            </div>
+                        </div>
                         <div class="news-swiper swiper">
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrapper relative">
                                 <div class="swiper-slide !w-fit bg-white px-3 rounded-[20px] py-3 pb-2">
                                     <img class="w-[223px]" src="images/banner.svg">
                                 </div>
@@ -90,6 +98,7 @@
                                     <img class="w-[223px]" src="images/banner.svg">
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="bg-brand-pink text-white rounded-3xl px-6 py-7">
@@ -117,7 +126,7 @@
                     </div>
                     <a class="see-link font-medium text-sm cursor-pointer decoration-brand-pink hover:text-brand-pink ease duration-150">See all</a>
                 </div>
-                <div id="upcoming" class="grid grid-cols-3 gap-9 content active">
+                <div id="upcoming" class="grid grid-cols-1 md:grid-cols-2 lg:justify-center xxl:grid-cols-3 gap-5 xxl:gap-9 content active">
                     <div class="bg-white rounded-[20px] py-5 px-7">
                         <h2 class="text-brand-pink font-bold text-2xl mb-4">Annual Women Convention 2022</h2>
                         <p class="font-normal leading-[26px] text-sm">“Playing Big; Time to take our Place”. This year’s conference will showcase leading... <span class="text-brand-pink font-medium">Read more</span></p>
@@ -155,7 +164,7 @@
                         </a>
                     </div>
                 </div>
-                <div id="live" class="grid grid-cols-3 gap-9 content">
+                <div id="live" class="grid grid-cols-3 gap-5 xxl:gap-9 content">
                     <div class="bg-white rounded-[20px] py-5 px-7">
                         <h2 class="text-brand-pink font-bold text-2xl mb-4">Live Women Convention 2022</h2>
                         <p class="font-normal leading-[26px] text-sm">“Playing Big; Time to take our Place”. This year’s conference will showcase leading... <span class="text-brand-pink font-medium">Read more</span></p>
@@ -193,7 +202,7 @@
                         </a>
                     </div>
                 </div>
-                <div id="old" class="grid grid-cols-3 gap-9 content">
+                <div id="old" class="grid grid-cols-3 gap-5 xxl:gap-9 content">
                     <div class="bg-white rounded-[20px] py-5 px-7">
                         <h2 class="text-brand-pink font-bold text-2xl mb-4">Oldest Women Convention 2022</h2>
                         <p class="font-normal leading-[26px] text-sm">“Playing Big; Time to take our Place”. This year’s conference will showcase leading... <span class="text-brand-pink font-medium">Read more</span></p>
