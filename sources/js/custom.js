@@ -15,22 +15,19 @@ function closeMenu() {
     document.querySelector("body").style.overflow = "scroll";
 }
 
-
+dashboard = document.getElementById("dash-menu")
 
 function openDashMenu() {
-  document.getElementById("dash-menu").classList.add("show-dash");
-  document.getElementById("dash-menu").classList.remove("remove-dash");
+  dashboard.classList.add("show-dash");
+  dashboard.style.opacity = 1
+  dashboard.style.transition = "opacity 0.3s ease"
+  // document.getElementById("dash-menu").classList.remove("remove-dash");
 } 
 
 function closeDashMenu() {
-  document.getElementById("dash-menu").classList.remove("show-dash");
-  document.getElementById("dash-menu").classList.add("remove-dash");
-}
-
-if (window.innerWidth <= 1200) {
-  closeDashMenu();
-} else {
-  openDashMenu();
+  dashboard.style.opacity = "unset"
+  setTimeout(() => dashboard.classList.remove("show-dash"), 200);
+  // document.getElementById("dash-menu").classList.add("remove-dash");
 }
 
 const swiper = new Swiper('.news-swiper', {

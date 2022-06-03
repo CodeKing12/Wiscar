@@ -71,18 +71,36 @@ i {
     font-weight: bold;
 }
 
-.remove-dash {
+/* .remove-dash {
     transform: translateX(-100%);
     transition: all 0.2s ease-in-out;
-}
+} */
 
 .show-dash {
-    transform: translateX(0);
+    width: 270px !important;
+    padding: 40px 20px 176px 20px !important;
     transition: all 0.2s ease-out;
 }
 
-@media (max-width: 992px) {
-    #dash-menu {
-        transform: translateX(-100%);
+@media (max-width: 900px) {
+    .dash-search {
+        display: none;
+    }
+}
+
+@media (max-width: 810px) {
+    .dash-boxes {
+        flex-direction: column;
+    }
+
+    .dash-boxes > div:first-child {
+        width: 100% !important;
+    }
+
+    .dash-boxes > div:nth-child(2) {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
