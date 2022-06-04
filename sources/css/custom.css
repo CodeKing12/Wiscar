@@ -113,4 +113,56 @@ i {
         flex-direction: column;
         align-items: center;
     }
+
+    .renewal {
+        flex-direction: column;
+        width: fit-content;
+        min-width: 400px;
+        align-items: center;
+    }
+
+    .renewal-parent {
+        margin: 0 auto;
+        width: fit-content;
+        margin-top: 60px;
+    }
 }
+
+
+/* Styles for pie chart */
+@keyframes growProgressBar {
+    0%, 33% { --pgPercentage: 0; }
+    100% { --pgPercentage: var(--value); }
+  }
+  
+  /* @property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+  } */
+  
+  div[role="progressbar"] {
+    --size: 18rem;
+    --fg: #FC278F;
+    --bg: #C9B7C1;
+    --pgPercentage: var(--value);
+    transform: rotate(180deg);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+      radial-gradient(closest-side, white 72%, transparent 0 100%, white 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+      ;
+    font-size: calc(var(--size) / 5);
+    /* color: var(--fg); */
+  }
+
+  @media (max-width: 450px) {
+      .renewal {
+          min-width: unset;
+      }
+  }

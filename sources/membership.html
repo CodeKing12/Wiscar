@@ -10,8 +10,9 @@
     <link href="css/custom.css" type="text/css" rel="stylesheet">
     <link href="css/all.min.css" type="text/css" rel="stylesheet">
     <link href="css/swiper-bundle.min.css" type="text/css" rel="stylesheet">
+    <!-- <link href="css/css-circular-prog-bar.css" rel="stylesheet"> -->
 </head>
-<body class="font-inter font-normal bg-white text-black text-base">
+<body onload="init()" class="font-inter font-normal bg-white text-black text-base">
     <main class="flex">
         <div id="dash-menu" class="bg-black h-full z-10 fixed w-0 xl:w-[250px] xl:pt-10 xl:pb-44 xl:px-5 overflow-y-scroll duration-200 ease-in opacity-0 xl:!opacity-100"><!--[250px]-->
             <i onclick="closeDashMenu()" class="fa-solid fa-rectangle-xmark xl:!hidden !block w-fit ml-auto hover:text-white text-4xl cursor-pointer text-brand-pink mb-5 duration-200 ease-in-out"></i>
@@ -58,7 +59,7 @@
                 Logout
             </a>
         </div>
-        <div class="main-page w-full px-4 sm:px-5 lg:px-8 xl:px-10 pt-4 pb-9 xl:ml-[250px]">
+        <div class="main-page w-full px-4 sm:px-5 lg:px-8 xl:px-10 pt-4 pb-14 xl:ml-[250px]">
             <div class="flex justify-between items-center">
                 <i onclick="openDashMenu()" class="material-symbols-outlined xl:!hidden cursor-pointer !text-4xl text-brand-pink">menu</i>
                 <form class="w-fit relative dash-search">
@@ -72,10 +73,10 @@
                     <img class="w-16" src="images/Ellipse 1.svg">
                 </div>
             </div>
-            <div class="mt-14 mx-auto lg:mx-0 w-fit">
+            <div class="mt-14 mx-auto lg:mx-0 w-fit lg:w-full">
                 <h3 class="mb-5 font-bold text-lg">Membership Status</h3>
                 <div class="bg-brand-pink text-white py-8 pb-9 lg:py-6 lg:pb-6 px-8 rounded-[20px] flex flex-col lg:flex-row lg:gap-8 gap-6 items-center lg:justify-evenly w-fit lg:w-full">
-                    <div class="lg:border-r border-opacity-40 border-white lg:pr-14 xl:pr-8 xl:mr-4 lg:mr-6">
+                    <div class="lg:border-r border-opacity-40 border-white lg:pr-11 xl:pr-7 xl:mr-3 lg:mr-5">
                         <h6 class="font-bold mb-5">Membership Status</h6>
                         <div class="flex gap-5 mb-6 items-center">
                             <img class="border-[3px] border-[#ffaed6] rounded-full" src="images/Ellipse 1.svg">
@@ -99,11 +100,31 @@
                     </div>
                 </div>
             </div>
+            <div class="mt-14 mx-auto lg:mx-0 w-full renewal-parent">
+                <h3 class="mb-5 font-bold text-lg">Subscription & Renewal</h3>
+                <div class="renewal bg-brand-purple bg-opacity-[3%] py-8 pb-9 sm:py-7 px-3 sm:px-8 rounded-[20px] flex flex-col sm:flex-row sm:gap-14 gap-6 w-fit sm:w-full">
+                    <div class="text-center shadow-[inset_0px_13px_26px_rgba(0,0,0,0.2)]" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="--value:60">
+                        <div class="rotate-180">
+                            <h2 class="font-black text-2xl mb-[10px]">40 days<br> Remaining</h2>
+                            <p class="text-sm">Expires 22nd May,2022</p>
+                        </div>
+                    </div>
+                    <div class="border-l border-black border-opacity-20"></div>
+                    <div class="">
+                        <h3 class="font-bold mb-[10px]">Renew Subscription Plan</h3>
+                        <p class="mb-5 text-sm">The subscription is currently priced NGN 2,000</p>
+                        <a class="cursor-pointer flex group gap-[14px] bg-brand-pink hover:bg-brand-purple text-white hover:duration-300 hover:ease-out text-center w-60 py-4 px-3 text-sm font-medium justify-center rounded-[75px] duration-200 transition-all ease-in max-w-xs">
+                            Proceed To Payment
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
     <!-- <script src="js/jquery.min.js"></script> -->
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/pingpoliCircleProgressBar.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>
