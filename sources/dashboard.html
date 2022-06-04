@@ -58,7 +58,7 @@
                 Logout
             </a>
         </div>
-        <div class="main-page w-full px-2 sm:px-5 lg:px-8 xl:px-10 pt-4 pb-9 xl:ml-[250px]">
+        <div class="main-page w-full px-4 sm:px-5 lg:px-8 xl:px-10 pt-4 pb-9 xl:ml-[250px]">
             <div class="flex justify-between items-center">
                 <i onclick="openDashMenu()" class="material-symbols-outlined xl:!hidden cursor-pointer !text-4xl text-brand-pink">menu</i>
                 <form class="w-fit relative dash-search">
@@ -128,13 +128,13 @@
             </section>
 
             <section class="mt-12 bg-brand-purple bg-opacity-5 py-5 px-2 sm:px-7 rounded-[20px] wrapper">
-                <div class="flex items-center justify-between mb-7">
-                    <div class="flex gap-4">
+                <div class="flex flex-col sm:flex-row items-center justify-between mb-7">
+                    <div class="flex flex-wrap mx-auto sm:mx-0 gap-4">
                         <a data-id="upcoming" class="tab-button cursor-pointer rounded-[70px] bg-white active py-3 px-[18px]">Upcoming Events</a>
                         <a data-id="live" class="tab-button cursor-pointer rounded-[70px] text-sm bg-white py-3 px-[18px]">Live Events</a>
                         <a data-id="old" class="tab-button cursor-pointer rounded-[70px] text-sm bg-white py-3 px-[18px]">Old Events</a>
                     </div>
-                    <a class="see-link font-medium text-sm cursor-pointer decoration-brand-pink hover:text-brand-pink ease duration-150">See all</a>
+                    <a class="see-link mt-5 sm:mt-0 font-medium text-sm cursor-pointer decoration-brand-pink hover:text-brand-pink ease duration-150">See all</a>
                 </div>
                 <div id="upcoming" class="grid grid-cols-1 md:grid-cols-2 justify-items-center xxl:grid-cols-3 gap-5 xxl:gap-9 content active">
                     <div class="max-w-md bg-white rounded-[20px] py-5 px-7">

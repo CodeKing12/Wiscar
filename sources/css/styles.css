@@ -712,6 +712,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 6rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .\!block{
   display: block !important;
 }
@@ -1735,6 +1739,15 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-column: span 5 / span 5;
   }
 
+  .sm\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .sm\:mt-0{
+    margin-top: 0px;
+  }
+
   .sm\:block{
     display: block;
   }
@@ -1753,6 +1766,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:max-w-lg{
     max-width: 32rem;
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
   }
 
   .sm\:justify-start{
