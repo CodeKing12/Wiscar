@@ -66,3 +66,41 @@ tabs.onclick = e => {
     element.classList.add("active");
   }
 }
+
+
+function getMinimum(elClass) {
+  const date = new Date();
+  let currentMonth;
+  let minimum;
+  if (elClass == 'year') {
+    minimum = 2022;
+  } else if (elClass == 'month') {
+    currentMonth = date.getMonth() + 1
+    minimum = currentMonth;
+  }
+  return minimum
+}
+
+function increment(elClass) {
+  minimum = getMinimum(elClass)
+  element = document.querySelector(`.${elClass}`);
+  value = parseInt(element.value);
+  if (isNaN(value) || value < minimum) {
+    value = minimum;
+  } else {
+    value += 1;
+  }
+  element.value = value;
+}
+
+function decrement(elClass) {
+  minimum = getMinimum(elClass)
+  element = document.querySelector(`.${elClass}`);
+  value = parseInt(element.value);
+  if (isNaN(value) || value <= minimum) {
+    value = minimum;
+  } else {
+    value -= 1;
+  }
+  element.value = value;
+}
