@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiscar | Membership Status</title>
+    <link href="images/favicon.ico" rel="icon" type="image/png">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
+    <link href="css/all.min.css" type="text/css" rel="stylesheet">
+    <link href="css/swiper-bundle.min.css" type="text/css" rel="stylesheet">
+</head>
+<body class="font-inter font-normal bg-white text-black text-base">
+    <main class="flex">
+        <div id="dash-menu" class="bg-black h-full z-10 fixed w-0 xl:w-[250px] xl:pt-10 xl:pb-44 xl:px-5 overflow-y-scroll duration-200 ease-in opacity-0 xl:!opacity-100"><!--[250px]-->
+            <i onclick="closeDashMenu()" class="fa-solid fa-rectangle-xmark xl:!hidden !block w-fit ml-auto hover:text-white text-4xl cursor-pointer text-brand-pink mb-5 duration-200 ease-in-out"></i>
+            <img class="w-52 mb-20" src="images/logo.svg">
+            <div class="flex flex-col gap-5 mb-36 w-52">
+                <a class="cursor-pointer flex group gap-[14px] bg-brand-pink hover:bg-white text-white hover:text-brand-pink hover:duration-300 hover:ease-out py-5 px-9 font-bold rounded-[75px] duration-200 transition-all ease-in">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    Dashboard
+                </a>
+                <a class="cursor-pointer flex group gap-[14px] bg-black hover:bg-white text-white hover:text-brand-pink hover:duration-300 hover:ease-out py-5 px-9 font-normal hover:font-bold rounded-[75px] duration-200 transition-all ease-in">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Events
+                </a>
+                <a class="cursor-pointer flex group gap-[14px] bg-black hover:bg-white text-white hover:text-brand-pink hover:duration-300 hover:ease-out py-5 px-9 font-normal hover:font-bold rounded-[75px] duration-200 transition-all ease-in">
+                    <i class="fa-solid fa-heart-circle-check"></i>
+                    Lifestyle
+                </a>
+                <a class="cursor-pointer flex group gap-[14px] bg-black hover:bg-white text-white hover:text-brand-pink hover:duration-300 hover:ease-out py-5 px-9 font-normal hover:font-bold rounded-[75px] duration-200 transition-all ease-in">
+                    <i class="fa-solid fa-user-group"></i>
+                    Community
+                </a>
+                <a class="cursor-pointer flex group gap-[14px] bg-black hover:bg-white text-white hover:text-brand-pink hover:duration-300 hover:ease-out py-5 px-9 font-normal hover:font-bold rounded-[75px] duration-200 transition-all ease-in">
+                    <img class="group-hover:hidden block" src="images/tv-white.svg">
+                    <img class="hidden group-hover:block" src="images/tv-pink.svg">
+                    WiscaTV
+                </a>
+                <a class="cursor-pointer flex group gap-[14px] bg-black hover:bg-white text-white hover:text-brand-pink hover:duration-300 hover:ease-out py-5 px-9 font-normal hover:font-bold rounded-[75px] duration-200 transition-all ease-in">
+                    <i class="fa-solid fa-circle-user"></i>
+                    Profile
+                </a>
+                <a class="cursor-pointer hidden sm:flex nav-dash-search group gap-[14px] bg-black hover:bg-white w-fit text-white hover:text-brand-pink hover:duration-300 hover:ease-out py-5 px-9 font-normal hover:font-bold rounded-[75px] duration-200 transition-all ease-in">
+                    Search
+                    <i class="fa-solid fa-magnifying-glass nav-dash-search cursor-pointer text-white text-2xl group-hover:text-brand-pink"></i>
+                </a>
+                <div class="flex gap-4 justify-evenly sm:hidden">
+                    <a class="flex sm:hidden"><svg class="cursor-pointer fill-white hover:fill-brand-pink transition-all duration-150 ease-linear" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg></a>
+                    <a class="flex sm:hidden"><svg class="cursor-pointer fill-white hover:fill-brand-pink transition-all duration-150 ease-linear" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path d="M15.137 3.945c-.644-.374-1.042-1.07-1.041-1.82v-.003c.001-1.172-.938-2.122-2.096-2.122s-2.097.95-2.097 2.122v.003c.001.751-.396 1.446-1.041 1.82-4.667 2.712-1.985 11.715-6.862 13.306v1.749h20v-1.749c-4.877-1.591-2.195-10.594-6.863-13.306zm-3.137-2.945c.552 0 1 .449 1 1 0 .552-.448 1-1 1s-1-.448-1-1c0-.551.448-1 1-1zm3 20c0 1.598-1.392 3-2.971 3s-3.029-1.402-3.029-3h6zm5.778-11.679c.18.721.05 1.446-.304 2.035l.97.584c.504-.838.688-1.869.433-2.892-.255-1.024-.9-1.848-1.739-2.351l-.582.97c.589.355 1.043.934 1.222 1.654zm.396-4.346l-.597.995c1.023.616 1.812 1.623 2.125 2.874.311 1.251.085 2.51-.53 3.534l.994.598c.536-.892.835-1.926.835-3-.001-1.98-1.01-3.909-2.827-5.001zm-16.73 2.692l-.582-.97c-.839.504-1.484 1.327-1.739 2.351-.255 1.023-.071 2.053.433 2.892l.97-.584c-.354-.588-.484-1.314-.304-2.035.179-.72.633-1.299 1.222-1.654zm-4.444 2.308c0 1.074.299 2.108.835 3l.994-.598c-.615-1.024-.841-2.283-.53-3.534.312-1.251 1.101-2.258 2.124-2.873l-.597-.995c-1.817 1.092-2.826 3.021-2.826 5z"/></svg></a>
+                    <i class="fa-solid fa-magnifying-glass nav-dash-search cursor-pointer text-white text-2xl hover:text-brand-pink"></i>
+                    <!-- <img class="absolute right-9 top-1/2 translate-x-1/2 -translate-y-1/2" src="images/Search.svg"> -->
+                </div>
+            </div>
+            <a class="cursor-pointer flex group gap-[14px] bg-black hover:bg-white text-white hover:text-brand-pink hover:duration-300 hover:ease-out py-5 px-9 font-normal hover:font-bold rounded-[75px] duration-200 transition-all ease-in">
+                <i class="fa-solid fa-power-off"></i>
+                Logout
+            </a>
+        </div>
+        <div class="main-page w-full px-4 sm:px-5 lg:px-8 xl:px-10 pt-4 pb-9 xl:ml-[250px]">
+            <div class="flex justify-between items-center">
+                <i onclick="openDashMenu()" class="material-symbols-outlined xl:!hidden cursor-pointer !text-4xl text-brand-pink">menu</i>
+                <form class="w-fit relative dash-search">
+                    <input class="rounded-[80px] text-sm px-10 pr-14 py-4 bg-[#ffefe] w-[390px] h-[58px] shadow-[0px_3px_10px_rgba(0,0,0,0.08)] outline-none focus:border-brand-pink border-2 border-transparent ease duration-200" type="text" placeholder="Search Anything">
+                    <img class="absolute right-9 top-1/2 translate-x-1/2 -translate-y-1/2" src="images/Search.svg">
+                </form>
+                <div class="flex items-center gap-5 xs:gap-8 lg:gap-10">
+                    <a class="hidden sm:flex"><svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg></a>
+                    <a class="hidden sm:flex"><svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path d="M15.137 3.945c-.644-.374-1.042-1.07-1.041-1.82v-.003c.001-1.172-.938-2.122-2.096-2.122s-2.097.95-2.097 2.122v.003c.001.751-.396 1.446-1.041 1.82-4.667 2.712-1.985 11.715-6.862 13.306v1.749h20v-1.749c-4.877-1.591-2.195-10.594-6.863-13.306zm-3.137-2.945c.552 0 1 .449 1 1 0 .552-.448 1-1 1s-1-.448-1-1c0-.551.448-1 1-1zm3 20c0 1.598-1.392 3-2.971 3s-3.029-1.402-3.029-3h6zm5.778-11.679c.18.721.05 1.446-.304 2.035l.97.584c.504-.838.688-1.869.433-2.892-.255-1.024-.9-1.848-1.739-2.351l-.582.97c.589.355 1.043.934 1.222 1.654zm.396-4.346l-.597.995c1.023.616 1.812 1.623 2.125 2.874.311 1.251.085 2.51-.53 3.534l.994.598c.536-.892.835-1.926.835-3-.001-1.98-1.01-3.909-2.827-5.001zm-16.73 2.692l-.582-.97c-.839.504-1.484 1.327-1.739 2.351-.255 1.023-.071 2.053.433 2.892l.97-.584c-.354-.588-.484-1.314-.304-2.035.179-.72.633-1.299 1.222-1.654zm-4.444 2.308c0 1.074.299 2.108.835 3l.994-.598c-.615-1.024-.841-2.283-.53-3.534.312-1.251 1.101-2.258 2.124-2.873l-.597-.995c-1.817 1.092-2.826 3.021-2.826 5z"/></svg></a>
+                    <p class="lg:ml-5 -mr-2 font-bold text-sm">Sophie Oyinkansola</p>
+                    <img class="w-16" src="images/Ellipse 1.svg">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
