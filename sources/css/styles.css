@@ -925,6 +925,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
+.justify-evenly{
+  justify-content: space-evenly;
+}
+
 .justify-items-center{
   justify-items: center;
 }
@@ -1093,6 +1097,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-clip-text{
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.fill-white{
+  fill: #fff;
 }
 
 .object-contain{
@@ -1642,6 +1650,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(252 39 143 / var(--tw-bg-opacity));
 }
 
+.hover\:fill-black:hover{
+  fill: #000;
+}
+
+.hover\:fill-brand-pink:hover{
+  fill: #FC278F;
+}
+
 .hover\:font-bold:hover{
   font-weight: 700;
 }
@@ -1705,6 +1721,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.group:hover .group-hover\:text-brand-pink{
+  --tw-text-opacity: 1;
+  color: rgb(252 39 143 / var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:opacity-100{
   opacity: 1;
 }
@@ -1722,12 +1743,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: flex;
   }
 
+  .sm\:hidden{
+    display: none;
+  }
+
   .sm\:w-\[480px\]{
     width: 480px;
   }
 
   .sm\:max-w-lg{
     max-width: 32rem;
+  }
+
+  .sm\:justify-start{
+    justify-content: flex-start;
   }
 
   .sm\:gap-12{
@@ -1996,6 +2025,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 350px){
   .xs\:flex{
     display: flex;
+  }
+
+  .xs\:gap-8{
+    gap: 2rem;
   }
 
   .xs\:px-10{
