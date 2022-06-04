@@ -19,13 +19,16 @@ dashboard = document.getElementById("dash-menu")
 
 function openDashMenu() {
   dashboard.classList.add("show-dash");
-  dashboard.style.opacity = 1
-  dashboard.style.transition = "opacity 0.3s ease"
+  // dashboard.style.opacity = 0;
+  dashboard.style.transition = "opacity 0.3s ease";
+  dashboard.style.opacity = 1;
   // document.getElementById("dash-menu").classList.remove("remove-dash");
 } 
 
 function closeDashMenu() {
-  dashboard.style.opacity = "unset"
+  dashboard.style.opacity = "0";
+  // setTimeout(() => dashboard.style.opacity = "unset", 200);
+  // dashboard.style.opacity = "unset"
   setTimeout(() => dashboard.classList.remove("show-dash"), 200);
   // document.getElementById("dash-menu").classList.add("remove-dash");
 }
