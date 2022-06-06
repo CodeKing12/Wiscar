@@ -26,13 +26,13 @@
     list-style: url('../images/list.svg');
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {
+input[disable=number]::-webkit-inner-spin-button, 
+input[disable=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-input[type=number] {
+input[disable=number] {
     -webkit-appearance: textfield;
 }
 
@@ -164,5 +164,20 @@ i {
   @media (max-width: 450px) {
       .renewal {
           min-width: unset;
+      }
+  }
+
+  @media (min-width: 1340px) {
+    .card-num-details {
+        flex-direction: row;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1070px) {
+      .card-num-details {
+          flex-direction: column;
+      }
+      .card-num-details > div {
+          width: 100%;
       }
   }

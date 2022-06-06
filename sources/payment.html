@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiscar | Membership Status</title>
+    <title>Wiscar | Payment Information</title>
     <link href="images/favicon.ico" rel="icon" type="image/png">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <link href="css/custom.css" type="text/css" rel="stylesheet">
@@ -73,30 +73,30 @@
                 </div>
             </div>
             <div class="mt-14">
-                <h2 class="font-bold mb-5 text-lg">Payment</h2>
-                <div class="bg-brand-purple bg-opacity-[2%] py-10 px-14">
-                    <h3 class="font-bold mb-[10px]">Add payment method</h3>
-                    <p class="mb-10">Provide your debit or credit card details</p>
-                    <div class="flex gap-24">
-                        <img class="self-start" src="images/cc.svg">
-                        <form class="flex flex-col w-full gap-5">
-                            <div class="flex flex-col">
+                <h2 class="font-bold mb-5 text-lg text-center lg:text-left">Payment</h2>
+                <div class="bg-brand-purple bg-opacity-[2%] rounded-3xl py-10 px-3 sm:px-14">
+                    <h3 class="font-bold text-center lg:text-left mb-[10px]">Add payment method</h3>
+                    <p class="mb-10 text-center lg:text-left">Provide your debit or credit card details</p>
+                    <div class="flex flex-col lg:flex-row gap-16 lg:gap-24">
+                        <img class="self-center lg:self-start max-w-md w-[393px]" src="images/cc.svg">
+                        <form class="flex flex-col lg:w-full lg:mx-0 gap-5 w-fit mx-auto">
+                            <div class="flex flex-col max-w-md">
                                 <label class="mb-4 text-sm font-medium">Card Name</label>
                                 <input class="border border-[rgb(194,194,194)] text-sm h-[57px] px-8 py-5 w-full rounded-[70px] outline-none focus:border-2 focus:border-brand-pink placeholder:text-sm placeholder:text-black placeholder:text-opacity-70 duration-150 ease-in" type="text" name="full-name" placeholder="Jonno Riekwel Asantii">
                             </div>
-                            <div class="flex flex-col">
+                            <div class="flex flex-col max-w-md">
                                 <label class="mb-4 text-sm font-medium">Card Number</label>
                                 <div class="relative">
-                                    <input class="border border-[rgb(194,194,194)] text-sm h-[57px] px-8 pl-24 py-5 w-full rounded-[70px] outline-none focus:border-2 focus:border-brand-pink placeholder:text-sm placeholder:text-black placeholder:text-opacity-70 duration-150 ease-in" type="number" name="card-num" placeholder="4223 - 3232 - 8954 - 383">
+                                    <input id="cardNumber" disable="number" class="border border-[rgb(194,194,194)] text-sm h-[57px] px-8 pl-24 py-5 w-full rounded-[70px] outline-none focus:border-2 focus:border-brand-pink placeholder:text-sm placeholder:text-black placeholder:text-opacity-70 duration-150 ease-in" type="number" name="card-num" placeholder="4223  -  3232  -  8954  -  383">
                                     <img class="bg-brand-pink bg-opacity-10 rounded-l-[70px] py-4 px-6 absolute top-0 bottom-0 left-0 w-20 h-full" src="images/mastercard.svg">
                                 </div>
                             </div>
-                            <div class="flex gap-4">
-                                <div class="flex flex-col w-8/12">
+                            <div class="flex gap-4 flex-col sm:flex-row xl:flex-col xxl:flex-row max-w-md card-num-details">
+                                <div class="flex flex-col w-full sm:w-8/12 xl:w-full xxl:w-8/12">
                                     <label class="mb-4 text-sm font-medium">Expiration Date</label>
                                     <div class="flex gap-2 w-full">
                                         <div class="relative w-5/12">
-                                            <input class="month border w-full border-[rgb(194,194,194)] text-sm h-[57px] px-8 py-5 rounded-[70px] outline-none focus:border-2 focus:border-brand-pink placeholder:text-sm placeholder:text-black placeholder:text-opacity-70 duration-150 ease-in" type="number" name="full-name" placeholder="05">
+                                            <input disable="number" class="month border w-full border-[rgb(194,194,194)] text-sm h-[57px] px-8 py-5 rounded-[70px] outline-none focus:border-2 focus:border-brand-pink placeholder:text-sm placeholder:text-black placeholder:text-opacity-70 duration-150 ease-in" type="number" name="full-name" placeholder="05" onchange="if(parseInt(this.value,10)<10)this.value='0'+this.value;">
                                             <div class="flex flex-col w-fit absolute top-[15px] bottom-0 right-6">
                                                 <i class="fa-solid fa-angle-up !text-[15px] cursor-pointer" onclick="increment('month')"></i>
                                                 <i class="fa-solid fa-angle-down !text-[15px] cursor-pointer" onclick="decrement('month')"></i>
@@ -105,7 +105,7 @@
                                         </div>
                                         <p class="flex items-center">/</p>
                                         <div class="relative w-7/12">
-                                            <input class="year border border-[rgb(194,194,194)] text-sm h-[57px] px-8 py-5 w-full rounded-[70px] outline-none focus:border-2 focus:border-brand-pink placeholder:text-sm placeholder:text-black placeholder:text-opacity-70 duration-150 ease-in" type="number" name="full-name" placeholder="2023">
+                                            <input disable="number" class="year border border-[rgb(194,194,194)] text-sm h-[57px] px-8 py-5 w-full rounded-[70px] outline-none focus:border-2 focus:border-brand-pink placeholder:text-sm placeholder:text-black placeholder:text-opacity-70 duration-150 ease-in" type="number" name="full-name" placeholder="2023">
                                             <div class="flex flex-col w-fit absolute top-[15px] right-6">
                                                 <i class="fa-solid fa-angle-up !text-[15px] cursor-pointer" onclick="increment('year')"></i>
                                                 <i class="fa-solid fa-angle-down !text-[15px] cursor-pointer" onclick="decrement('year')"></i>
@@ -114,14 +114,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex flex-col w-4/12">
+                                <div class="flex flex-col w-6/12 sm:w-4/12 xl:w-6/12 xxl:w-4/12">
                                     <label class="mb-4 text-sm font-medium">CVV</label>
                                     <div class="">
-                                        <input class="border text-center border-[rgb(194,194,194)] text-sm h-[57px] px-8 py-5 w-full rounded-[70px] outline-none focus:border-2 focus:border-brand-pink placeholder:text-sm placeholder:text-black placeholder:text-opacity-70 duration-150 ease-in" type="number" name="cvv" placeholder="422">
+                                        <input disable="number" class="border text-center border-[rgb(194,194,194)] text-sm h-[57px] px-8 py-5 w-full rounded-[70px] outline-none focus:border-2 focus:border-brand-pink placeholder:text-sm placeholder:text-black placeholder:text-opacity-70 duration-150 ease-in" type="number" name="cvv" placeholder="422">
                                     </div>
                                 </div>
                             </div>
-                            <a href="payment.html" class="cursor-pointer mt-10 flex group gap-[14px] bg-brand-pink hover:bg-brand-purple text-white hover:duration-300 hover:ease-out text-center w-full py-[18px] px-3 text-sm font-medium justify-center rounded-[75px] duration-200 transition-all ease-in max-w-2xl">
+                            <a href="payment.html" class="cursor-pointer mt-10 flex group gap-[14px] bg-brand-pink hover:bg-brand-purple text-white hover:duration-300 hover:ease-out text-center w-full py-[18px] px-3 text-sm font-medium justify-center rounded-[75px] duration-200 transition-all ease-in max-w-md">
                                 Pay NGN 2,000
                             </a>
                         </form>
@@ -131,6 +131,9 @@
         </div>
     </main>
 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>

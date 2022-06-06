@@ -46,24 +46,26 @@ const swiper = new Swiper('.news-swiper', {
     // effect: 'fade'
 });
 
-  
+
 const tabs = document.querySelector(".wrapper");
 const tabButton = document.querySelectorAll(".tab-button");
 const contents = document.querySelectorAll(".content");
 
-tabs.onclick = e => {
-  const id = e.target.dataset.id;
-  if (id) {
-    tabButton.forEach(btn => {
-      btn.classList.remove("active");
-    });
-    e.target.classList.add("active");
-
-    contents.forEach(content => {
-      content.classList.remove("active");
-    });
-    const element = document.getElementById(id);
-    element.classList.add("active");
+if (tabs !== null) {
+  tabs.onclick = e => {
+    const id = e.target.dataset.id;
+    if (id) {
+      tabButton.forEach(btn => {
+        btn.classList.remove("active");
+      });
+      e.target.classList.add("active");
+  
+      contents.forEach(content => {
+        content.classList.remove("active");
+      });
+      const element = document.getElementById(id);
+      element.classList.add("active");
+    }
   }
 }
 
@@ -104,3 +106,5 @@ function decrement(elClass) {
   }
   element.value = value;
 }
+
+$("#cardNumber").mask("9999  -  9999  -  9999  -  9999");
