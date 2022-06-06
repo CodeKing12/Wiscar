@@ -107,4 +107,23 @@ function decrement(elClass) {
   element.value = value;
 }
 
-$("#cardNumber").mask("9999  -  9999  -  9999  -  9999");
+ function cc_format(value) {
+  var v = value.replace(/\s+/g, '').replace(/[^0-9]/gi, '')
+  var matches = v.match(/\d{4,20}/g);
+  var match = matches && matches[0] || ''
+  var parts = []
+  for (i=0, len=match.length; i<len; i+=4) {
+      parts.push(match.substring(i, i+4))
+  }
+  if (parts.length) {
+      return parts.join('  -  ')
+  } else {
+      return value
+  }
+}
+
+onload = function() {
+  document.getElementById('cardNumber').oninput = function() {
+      this.value = cc_format(this.value)
+  }
+}
