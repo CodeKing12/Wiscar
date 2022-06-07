@@ -173,7 +173,7 @@
         </div>
         <div>
             <img class="w-full max-w-3xl" src="images/become-a-member.png">
-            <div class="bg-brand-purple text-sm text-white py-10 px-5 lg:px-10 rounded-[20px]">
+            <div class="bg-brand-purple text-sm text-white py-10 px-5 lg:px-10 rounded-[20px] max-h-[720px] overflow-y-scroll">
                 <h3 class="text-brand-pink font-bold text-2xl">Membership Form</h3>
                 <p class="mt-3">Please fill all inputs accurately</p>
                 <form class="mt-8 flex flex-col gap-4">
@@ -188,15 +188,61 @@
                     <div class="">
                         <label class="font-medium text-sm">Gender</label>
                         <div class="mt-[15px] flex gap-6">
-                            <div class="relative text-sm font-medium flex cursor-pointer focus:bg-white bg-brand-pink min-w-[160px] rounded-[70px]">
+                            <div class="relative text-sm font-medium flex cursor-pointer border border-transparent min-w-[160px] rounded-[70px] bg-transparent border-white group duration-200 ease-in gender-selected" onclick="toggleButton('gender-selected', this)">
                                 <a class="text-white px-9 py-5">Male</a>
-                                <img class="absolute top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px]" src="images/checkmark.svg">
+                                <img class="checkhollow absolute opacity-100 top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px] duration-150 ease-linear" src="images/checkhollow.svg">
+                                <img class="checkmark absolute opacity-0 top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px] duration-150 ease-linear" src="images/checkmark.svg">
                             </div>
-                            <div class="relative text-sm font-medium flex cursor-pointer focus:bg-brand-pink bg-transparent min-w-[160px] rounded-[70px] border">
+                            <div class="relative text-sm font-medium flex cursor-pointer focus:bg-brand-pink focus:border-transparent bg-transparent min-w-[160px] rounded-[70px] border group duration-200 ease-in" onclick="toggleButton('gender-selected', this)">
                                 <a class="text-white px-9 py-5">Female</a>
-                                <img class="absolute top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px]" src="images/checkhollow.svg">
+                                <img class="checkhollow absolute opacity-100 group-focus:opacity-0 top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px] duration-150 ease-linear" src="images/checkhollow.svg">
+                                <img class="checkmark absolute opacity-0 group-focus:opacity-100 top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px] duration-150 ease-linear" src="images/checkmark.svg">
                             </div>
                         </div>
+                    </div>
+                    <div class="">
+                        <label class="font-medium text-sm">Marital Status</label>
+                        <div class="mt-[15px] flex gap-6">
+                            <div class="relative text-sm font-medium flex cursor-pointer border-transparent bg-transparent min-w-[160px] border-white rounded-[70px] border group duration-200 ease-in" onclick="toggleButton('marital-selected', this)">
+                                <a class="text-white px-9 py-5">Single</a>
+                                <img class="checkhollow absolute opacity-100 top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px] duration-150 ease-linear" src="images/checkhollow.svg">
+                                <img class="checkmark absolute opacity-0 top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px] duration-150 ease-linear" src="images/checkmark.svg">
+                            </div>
+                            <div class="relative text-sm font-medium flex cursor-pointer border border-transparent min-w-[160px] rounded-[70px] bg-transparent marital-selected border-white group duration-200 ease-in" onclick="toggleButton('marital-selected', this)">
+                                <a class="text-white px-9 py-5">Married</a>
+                                <img class="checkhollow absolute opacity-100 top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px] duration-150 ease-linear" src="images/checkhollow.svg">
+                                <img class="checkmark absolute opacity-0 top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px] duration-150 ease-linear" src="images/checkmark.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <input class="border-[0.5px] border-white bg-transparent px-8 py-[14px] placeholder:text-white w-full rounded-[70px] outline-none focus:border-brand-pink transition-all" name="fullname" type="text" placeholder="State of Origin"> 
+                    <input class="border-[0.5px] border-white bg-transparent px-8 py-[14px] placeholder:text-white w-full rounded-[70px] outline-none focus:border-brand-pink transition-all" name="fullname" type="text" placeholder="Contact Address"> 
+                    <div class="">
+                        <label class="font-medium text-sm">Do you own your enterprise?</label>
+                        <div class="mt-[15px] flex gap-6">
+                            <div class="relative text-sm font-medium flex cursor-pointer border min-w-[160px] rounded-[70px] bg-transparent border-white group duration-200 ease-in ownership-selected" onclick="toggleButton('ownership-selected', this)">
+                                <a class="text-white px-9 py-5">Yes</a>
+                                <img class="checkhollow absolute opacity-100 top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px] duration-150 ease-linear" src="images/checkhollow.svg">
+                                <img class="checkmark absolute opacity-0 top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px] duration-150 ease-linear" src="images/checkmark.svg">
+                            </div>
+                            <div class="relative text-sm font-medium flex cursor-pointer bg-transparent border-white min-w-[160px] rounded-[70px] border duration-200 ease-in" onclick="toggleButton('ownership-selected', this)">
+                                <a class="text-white px-9 py-5">No</a>
+                                <img class="checkhollow absolute opacity-100 group-focus:opacity-0 top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px] duration-150 ease-linear" src="images/checkhollow.svg">
+                                <img class="checkmark absolute opacity-0 group-focus:opacity-100 top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px] duration-150 ease-linear" src="images/checkmark.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <input class="border-[0.5px] border-white bg-transparent px-8 py-[14px] placeholder:text-white w-full rounded-[70px] outline-none focus:border-brand-pink transition-all" name="fullname" type="text" placeholder="State of Origin"> 
+                    <input class="border-[0.5px] border-white bg-transparent px-8 py-[14px] placeholder:text-white w-full rounded-[70px] outline-none focus:border-brand-pink transition-all" name="fullname" type="text" placeholder="Contact Address"> 
+                    <div class="relative">
+                        <input disabled class="border-[0.5px] border-white bg-transparent px-8 py-[14px] placeholder:text-white w-full rounded-[70px] outline-none focus:border-brand-pink transition-all" name="fullname" type="text" placeholder="State of Origin">
+                        <input type="file" id="passportFile" class="hidden">
+                        <a class="bg-brand-pink absolute right-1 cursor-pointer top-1/2 -translate-y-1/2 text-white px-14 py-[10px] text-center rounded-[70px] hover:bg-white hover:text-brand-pink duration-150 font-medium ease-linear" onclick="openFiles('passportFile')">Browse</a>
+                    </div>
+                    <div class="relative">
+                        <input disabled class="border-[0.5px] border-white bg-transparent px-8 py-[14px] placeholder:text-white w-full rounded-[70px] outline-none focus:border-brand-pink transition-all" name="fullname" type="text" placeholder="Contact Address">
+                        <input type="file" id="resumeFile" class="hidden">
+                        <a class="bg-brand-pink absolute right-1 cursor-pointer top-1/2 -translate-y-1/2 text-white px-14 py-[10px] text-center rounded-[70px] hover:bg-white hover:text-brand-pink duration-150 font-medium ease-linear" onclick="openFiles('resumeFile')">Browse</a>
                     </div>
                 </form>
             </div>

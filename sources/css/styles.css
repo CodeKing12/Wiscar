@@ -565,6 +565,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 2rem;
 }
 
+.right-\[30px\]{
+  right: 30px;
+}
+
 .bottom-0{
   bottom: 0px;
 }
@@ -589,16 +593,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 1rem;
 }
 
-.right-3{
-  right: 0.75rem;
+.right-2{
+  right: 0.5rem;
 }
 
-.right-7{
-  right: 1.75rem;
-}
-
-.right-\[30px\]{
-  right: 30px;
+.right-1{
+  right: 0.25rem;
 }
 
 .z-10{
@@ -724,6 +724,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2rem;
 }
 
+.mt-\[15px\]{
+  margin-top: 15px;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -758,14 +762,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-24{
   margin-top: 6rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
-}
-
-.mt-\[15px\]{
-  margin-top: 15px;
 }
 
 .\!block{
@@ -824,10 +820,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 62px;
 }
 
-.h-14{
-  height: 3.5rem;
-}
-
 .h-8{
   height: 2rem;
 }
@@ -836,8 +828,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 57px;
 }
 
+.h-\[685px\]{
+  height: 685px;
+}
+
 .max-h-\[350px\]{
   max-height: 350px;
+}
+
+.max-h-\[685px\]{
+  max-height: 685px;
+}
+
+.max-h-\[720px\]{
+  max-height: 720px;
 }
 
 .w-0{
@@ -902,10 +906,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2.5rem;
 }
 
-.w-36{
-  width: 9rem;
-}
-
 .w-8{
   width: 2rem;
 }
@@ -936,6 +936,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-11{
   width: 2.75rem;
+}
+
+.w-36{
+  width: 9rem;
 }
 
 .min-w-\[160px\]{
@@ -1069,12 +1073,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.25rem;
 }
 
-.gap-3{
-  gap: 0.75rem;
-}
-
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-3{
+  gap: 0.75rem;
 }
 
 .gap-\[15px\]{
@@ -1375,6 +1379,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-14{
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
+}
+
+.px-14{
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.py-\[10px\]{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .pt-4{
@@ -1849,11 +1863,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.focus-within\:bg-white:focus-within{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .hover\:cursor-pointer:hover{
   cursor: pointer;
 }
@@ -1936,9 +1945,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 2px;
 }
 
+.focus\:border:focus{
+  border-width: 1px;
+}
+
 .focus\:border-brand-pink:focus{
   --tw-border-opacity: 1;
   border-color: rgb(252 39 143 / var(--tw-border-opacity));
+}
+
+.focus\:border-transparent:focus{
+  border-color: transparent;
+}
+
+.focus\:border-white:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .focus\:bg-white:focus{
@@ -1951,9 +1973,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(252 39 143 / var(--tw-bg-opacity));
 }
 
-.focus-visible\:bg-white:focus-visible{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.focus\:bg-transparent:focus{
+  background-color: transparent;
+}
+
+.focus\:\!bg-brand-pink:focus{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(252 39 143 / var(--tw-bg-opacity)) !important;
+}
+
+.focus\:text-brand-pink:focus{
+  --tw-text-opacity: 1;
+  color: rgb(252 39 143 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:block{
@@ -1971,6 +2002,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .group:hover .group-hover\:opacity-100{
   opacity: 1;
+}
+
+.group:focus .group-focus\:opacity-100{
+  opacity: 1;
+}
+
+.group:focus .group-focus\:opacity-0{
+  opacity: 0;
 }
 
 @media (min-width: 576px){

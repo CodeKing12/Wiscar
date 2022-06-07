@@ -191,3 +191,12 @@ i {
     /* Not removed via appearance */
     margin: 0;
   }
+
+  .gender-selected, .marital-selected, .ownership-selected {
+      background-color: #FC278F;
+      border-color: transparent;
+  }
+
+  .gender-selected .checkmark, .marital-selected .checkmark, .ownership-selected .checkmark {
+      opacity: 1;
+  }

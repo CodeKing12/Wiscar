@@ -127,3 +127,16 @@ onload = function() {
       this.value = cc_format(this.value)
   }
 }
+
+function toggleButton(className, element) {
+  let all_btns = document.getElementsByClassName(className);
+  for (let i=0; i < all_btns.length; i++) {
+    all_btns[i].classList.remove(className);
+  }
+  element.classList.add(className)
+}
+
+function openFiles(fileID) {
+  input = document.getElementById(fileID);
+  input.click();
+}
