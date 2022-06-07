@@ -185,6 +185,19 @@
                     <input class="border-[0.5px] border-white bg-transparent px-8 py-[14px] placeholder:text-white w-full rounded-[70px] outline-none focus:border-brand-pink transition-all" name="fullname" type="text" placeholder="Date of Birth" onfocus="(this.type='date')" onblur="(this.type='text')"> 
                     <input class="border-[0.5px] border-white bg-transparent px-8 py-[14px] placeholder:text-white w-full rounded-[70px] outline-none focus:border-brand-pink transition-all" name="fullname" type="text" placeholder="State of Origin"> 
                     <input class="border-[0.5px] border-white bg-transparent px-8 py-[14px] placeholder:text-white w-full rounded-[70px] outline-none focus:border-brand-pink transition-all" name="fullname" type="text" placeholder="Contact Address"> 
+                    <div class="">
+                        <label class="font-medium text-sm">Gender</label>
+                        <div class="mt-[15px] flex gap-6">
+                            <div class="relative text-sm font-medium flex cursor-pointer focus:bg-white bg-brand-pink min-w-[160px] rounded-[70px]">
+                                <a class="text-white px-9 py-5">Male</a>
+                                <img class="absolute top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px]" src="images/checkmark.svg">
+                            </div>
+                            <div class="relative text-sm font-medium flex cursor-pointer focus:bg-brand-pink bg-transparent min-w-[160px] rounded-[70px] border">
+                                <a class="text-white px-9 py-5">Female</a>
+                                <img class="absolute top-1/2 translate-x-1/2 -translate-y-1/2 right-[30px]" src="images/checkhollow.svg">
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
             <img class="mt-10" src="images/payment.svg">
@@ -215,6 +228,7 @@
         </div>
     </footer>
 
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>
