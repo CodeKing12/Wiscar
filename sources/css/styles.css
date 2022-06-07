@@ -764,6 +764,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 6rem;
 }
 
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.mb-\[72px\]{
+  margin-bottom: 72px;
+}
+
 .\!block{
   display: block !important;
 }
@@ -798,6 +806,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hidden{
   display: none;
+}
+
+.\!hidden{
+  display: none !important;
 }
 
 .h-full{
@@ -940,6 +952,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-36{
   width: 9rem;
+}
+
+.w-80{
+  width: 20rem;
+}
+
+.w-96{
+  width: 24rem;
+}
+
+.w-\[300px\]{
+  width: 300px;
+}
+
+.\!w-\[350px\]{
+  width: 350px !important;
 }
 
 .min-w-\[160px\]{
@@ -1158,6 +1186,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-left-width: 1px;
 }
 
+.border-dashed{
+  border-style: dashed;
+}
+
 .border-transparent{
   border-color: transparent;
 }
@@ -1262,6 +1294,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   fill: #fff;
 }
 
+.fill-black{
+  fill: #000;
+}
+
+.fill-brand-pink{
+  fill: #FC278F;
+}
+
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
@@ -1269,6 +1309,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-1{
   padding: 0.25rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.p-\[12px\]{
+  padding: 12px;
 }
 
 .py-5{
@@ -1435,6 +1483,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 6rem;
 }
 
+.pb-36{
+  padding-bottom: 9rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1505,6 +1557,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[26px\]{
   font-size: 26px;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-normal{
@@ -1660,6 +1717,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .duration-300{
   transition-duration: 300ms;
+}
+
+.duration-1000{
+  transition-duration: 1000ms;
 }
 
 .ease-in{
@@ -1991,6 +2052,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: block;
 }
 
+.group:hover .group-hover\:inline{
+  display: inline;
+}
+
+.group:hover .group-hover\:\!inline{
+  display: inline !important;
+}
+
 .group:hover .group-hover\:hidden{
   display: none;
 }
@@ -2151,6 +2220,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:grid-cols-12{
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
   }
 
   .md\:items-center{

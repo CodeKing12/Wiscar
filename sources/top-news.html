@@ -9,6 +9,7 @@
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <link href="css/custom.css" type="text/css" rel="stylesheet">
     <link href="css/all.min.css" type="text/css" rel="stylesheet">
+    <link href="css/swiper-bundle.min.css" type="text/css" rel="stylesheet">
     <!-- <link href="css/css-circular-prog-bar.css" rel="stylesheet"> -->
 </head>
 <body class="font-inter font-normal bg-white text-black text-base">
@@ -74,8 +75,8 @@
             </div>
             <div class="mt-14">
                 <h2 class="font-bold mb-5 text-lg text-center lg:text-left">Top News Box</h2>
-                <div class="bg-[rgba(251,250,250,1)] rounded-3xl py-10 px-3 sm:px-14">
-                    <div class="flex justify-between items-center mb-14">
+                <div class="bg-[rgba(251,250,250,1)] rounded-3xl py-10 pb-36 px-3 sm:px-14 mb-[72px]">
+                    <div class="flex flex-col md:flex-row gap-2 justify-between items-center mb-14">
                         <h2 class="text-brand-pink font-bold text-[26px]">COVID 19 Fundraising Drive / Outreach</h2>
                         <div class="flex gap-5 items-center">
                             <img class="w-11" src="images/wiscar-round.svg">
@@ -93,6 +94,143 @@
                             <br><br>
                             <strong>PORT-HARCOURT:</strong> In collaboration with The Reach NG, we provided food relief packs to vulnerable women and their households along the Baptist Waterside Community in Port Harcourt.
                         </p>
+                    </div>
+                    <div class="text-brand-pink flex mt-10 gap-7 font-bold fill-brand-pink">
+                        <div class="flex gap-2 group cursor-pointer">
+                            <svg class="inline group-hover:hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg>
+                            <svg class="hidden group-hover:inline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/></svg>
+                            Likes
+                        </div>
+                        <div class="flex gap-2 group cursor-pointer">
+                            <svg class="inline group-hover:hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M5 9c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3zm0-2c-2.762 0-5 2.239-5 5s2.238 5 5 5 5-2.239 5-5-2.238-5-5-5zm15 9c-1.165 0-2.204.506-2.935 1.301l-5.488-2.927c-.23.636-.549 1.229-.944 1.764l5.488 2.927c-.072.301-.121.611-.121.935 0 2.209 1.791 4 4 4s4-1.791 4-4-1.791-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2zm0-22c-2.209 0-4 1.791-4 4 0 .324.049.634.121.935l-5.488 2.927c.395.536.713 1.128.944 1.764l5.488-2.927c.731.795 1.77 1.301 2.935 1.301 2.209 0 4-1.791 4-4s-1.791-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"/></svg>
+                            <svg class="hidden group-hover:!inline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M5 7c2.761 0 5 2.239 5 5s-2.239 5-5 5-5-2.239-5-5 2.239-5 5-5zm11.122 12.065c-.073.301-.122.611-.122.935 0 2.209 1.791 4 4 4s4-1.791 4-4-1.791-4-4-4c-1.165 0-2.204.506-2.935 1.301l-5.488-2.927c-.23.636-.549 1.229-.943 1.764l5.488 2.927zm7.878-15.065c0-2.209-1.791-4-4-4s-4 1.791-4 4c0 .324.049.634.122.935l-5.488 2.927c.395.535.713 1.127.943 1.764l5.488-2.927c.731.795 1.77 1.301 2.935 1.301 2.209 0 4-1.791 4-4z"/></svg>
+                            Share
+                        </div>
+                        <div class="flex gap-2 cursor-pointer group">
+                            <i class="fa-regular fa-comment inline group-hover:hidden"></i>
+                            <i class="fa-solid fa-comment !hidden group-hover:!inline"></i>
+                            Comment
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <h3 class="font-bold text-2xl mb-8">More News/Article</h3>
+                    <div class="more-news-swiper swiper">
+                        <div class="swiper-wrapper relative">
+                            <div class="swiper-slide bg-brand-pink text-white p-[12px] rounded-[20px] !w-[350px]">
+                                <div class="border-dashed border py-5 px-5 rounded-[20px]">
+                                    <h4 class="font-bold text-xl mb-5">International Women’s Day Celebration</h4>
+                                    <p class="mb-6 text-sm">The 2020 International Women’s Day themed EachforEqual #GenerationEquality was marked by WISCAR with the screening of a documentary titled Money…</p>
+                                    <div class="flex justify-between">
+                                        <a class="font-bold text-sm cursor-pointer">
+                                            Read More
+                                        </a>
+                                        <a class="flex gap-2 group cursor-pointer fill-white">
+                                            <svg class="inline group-hover:hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg>
+                                            <svg class="hidden group-hover:inline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/></svg>
+                                            32
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-brand-pink text-white p-[12px] rounded-[20px] !w-[350px]">
+                                <div class="border-dashed border py-5 px-5 rounded-[20px]">
+                                    <h4 class="font-bold text-xl mb-5">International Women’s Day Celebration</h4>
+                                    <p class="mb-6 text-sm">The 2020 International Women’s Day themed EachforEqual #GenerationEquality was marked by WISCAR with the screening of a documentary titled Money…</p>
+                                    <div class="flex justify-between">
+                                        <a class="font-bold text-sm cursor-pointer">
+                                            Read More
+                                        </a>
+                                        <a class="flex gap-2 group cursor-pointer fill-white">
+                                            <svg class="inline group-hover:hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg>
+                                            <svg class="hidden group-hover:inline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/></svg>
+                                            32
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-brand-pink text-white p-[12px] rounded-[20px] !w-[350px]">
+                                <div class="border-dashed border py-5 px-5 rounded-[20px]">
+                                    <h4 class="font-bold text-xl mb-5">International Women’s Day Celebration</h4>
+                                    <p class="mb-6 text-sm">The 2020 International Women’s Day themed EachforEqual #GenerationEquality was marked by WISCAR with the screening of a documentary titled Money…</p>
+                                    <div class="flex justify-between">
+                                        <a class="font-bold text-sm cursor-pointer">
+                                            Read More
+                                        </a>
+                                        <a class="flex gap-2 group cursor-pointer fill-white">
+                                            <svg class="inline group-hover:hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg>
+                                            <svg class="hidden group-hover:inline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/></svg>
+                                            32
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-brand-pink text-white p-[12px] rounded-[20px] !w-[350px]">
+                                <div class="border-dashed border py-5 px-5 rounded-[20px]">
+                                    <h4 class="font-bold text-xl mb-5">International Women’s Day Celebration</h4>
+                                    <p class="mb-6 text-sm">The 2020 International Women’s Day themed EachforEqual #GenerationEquality was marked by WISCAR with the screening of a documentary titled Money…</p>
+                                    <div class="flex justify-between">
+                                        <a class="font-bold text-sm cursor-pointer">
+                                            Read More
+                                        </a>
+                                        <a class="flex gap-2 group cursor-pointer fill-white">
+                                            <svg class="inline group-hover:hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg>
+                                            <svg class="hidden group-hover:inline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/></svg>
+                                            32
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-brand-pink text-white p-[12px] rounded-[20px] !w-[350px]">
+                                <div class="border-dashed border py-5 px-5 rounded-[20px]">
+                                    <h4 class="font-bold text-xl mb-5">International Women’s Day Celebration</h4>
+                                    <p class="mb-6 text-sm">The 2020 International Women’s Day themed EachforEqual #GenerationEquality was marked by WISCAR with the screening of a documentary titled Money…</p>
+                                    <div class="flex justify-between">
+                                        <a class="font-bold text-sm cursor-pointer">
+                                            Read More
+                                        </a>
+                                        <a class="flex gap-2 group cursor-pointer fill-white">
+                                            <svg class="inline group-hover:hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg>
+                                            <svg class="hidden group-hover:inline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/></svg>
+                                            32
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-brand-pink text-white p-[12px] rounded-[20px] !w-[350px]">
+                                <div class="border-dashed border py-5 px-5 rounded-[20px]">
+                                    <h4 class="font-bold text-xl mb-5">International Women’s Day Celebration</h4>
+                                    <p class="mb-6 text-sm">The 2020 International Women’s Day themed EachforEqual #GenerationEquality was marked by WISCAR with the screening of a documentary titled Money…</p>
+                                    <div class="flex justify-between">
+                                        <a class="font-bold text-sm cursor-pointer">
+                                            Read More
+                                        </a>
+                                        <a class="flex gap-2 group cursor-pointer fill-white">
+                                            <svg class="inline group-hover:hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg>
+                                            <svg class="hidden group-hover:inline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/></svg>
+                                            32
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-brand-pink text-white p-[12px] rounded-[20px] !w-[350px]">
+                                <div class="border-dashed border py-5 px-5 rounded-[20px]">
+                                    <h4 class="font-bold text-xl mb-5">International Women’s Day Celebration</h4>
+                                    <p class="mb-6 text-sm">The 2020 International Women’s Day themed EachforEqual #GenerationEquality was marked by WISCAR with the screening of a documentary titled Money…</p>
+                                    <div class="flex justify-between">
+                                        <a class="font-bold text-sm cursor-pointer">
+                                            Read More
+                                        </a>
+                                        <a class="flex gap-2 group cursor-pointer fill-white">
+                                            <svg class="inline group-hover:hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"/></svg>
+                                            <svg class="hidden group-hover:inline" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/></svg>
+                                            32
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

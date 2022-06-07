@@ -46,6 +46,17 @@ const swiper = new Swiper('.news-swiper', {
     // effect: 'fade'
 });
 
+const moreNewsSwiper = new Swiper('.more-news-swiper', {
+  speed: 400,
+  spaceBetween: 20,
+  slidesPerView: 'auto',
+  initialSlide: 0,
+  // navigation: {
+  //   prevEl: '.prev-news',
+  //   nextEl: '.next-news',
+  // }
+  // effect: 'fade'
+});
 
 const tabs = document.querySelector(".wrapper");
 const tabButton = document.querySelectorAll(".tab-button");
@@ -140,3 +151,12 @@ function openFiles(fileID) {
   input = document.getElementById(fileID);
   input.click();
 }
+
+window.addEventListener('resize', function(event) {
+  if (screen.width >= 1200) {
+    console.log("Hey")
+    document.querySelector(".main-page").style.maxWidth = screen.width - 250 + "px";
+  } else {
+    document.querySelector(".main-page").style.maxWidth = "100%";
+  }
+});
