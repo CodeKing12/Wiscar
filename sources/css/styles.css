@@ -970,6 +970,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 350px !important;
 }
 
+.w-\[680px\]{
+  width: 680px;
+}
+
+.w-\[540px\]{
+  width: 540px;
+}
+
+.w-64{
+  width: 16rem;
+}
+
 .min-w-\[160px\]{
   min-width: 160px;
 }
@@ -1119,6 +1131,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-8{
   gap: 2rem;
+}
+
+.self-end{
+  align-self: flex-end;
 }
 
 .self-center{
@@ -1820,6 +1836,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 0.7;
 }
 
+.placeholder\:text-opacity-90::-moz-placeholder{
+  --tw-text-opacity: 0.9;
+}
+
+.placeholder\:text-opacity-90:-ms-input-placeholder{
+  --tw-text-opacity: 0.9;
+}
+
+.placeholder\:text-opacity-90::placeholder{
+  --tw-text-opacity: 0.9;
+}
+
+.placeholder\:text-opacity-80::-moz-placeholder{
+  --tw-text-opacity: 0.8;
+}
+
+.placeholder\:text-opacity-80:-ms-input-placeholder{
+  --tw-text-opacity: 0.8;
+}
+
+.placeholder\:text-opacity-80::placeholder{
+  --tw-text-opacity: 0.8;
+}
+
 .before\:absolute::before{
   content: var(--tw-content);
   position: absolute;
@@ -2249,6 +2289,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:justify-center{
     justify-content: center;
+  }
+
+  .md\:self-end{
+    align-self: flex-end;
   }
 
   .md\:px-12{
