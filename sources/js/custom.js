@@ -155,8 +155,15 @@ function openFiles(fileID) {
 window.addEventListener('resize', function(event) {
   if (screen.width >= 1200) {
     console.log("Hey")
-    document.querySelector(".main-page").style.maxWidth = screen.width - 250 + "px";
+    document.querySelector(".main-page").style.maxWidth = screen.width - 265 + "px";
   } else {
     document.querySelector(".main-page").style.maxWidth = "100%";
   }
 });
+
+if (screen.width >= 1200) {
+  console.log("Hey")
+  document.querySelector(".main-page").style.maxWidth = screen.width - 265 + "px";
+} else {
+  document.querySelector(".main-page").style.maxWidth = "100%";
+}

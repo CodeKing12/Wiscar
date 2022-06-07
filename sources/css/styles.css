@@ -1117,6 +1117,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 2.5rem;
 }
 
+.gap-8{
+  gap: 2rem;
+}
+
 .self-center{
   align-self: center;
 }
@@ -1485,6 +1489,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-36{
   padding-bottom: 9rem;
+}
+
+.pb-28{
+  padding-bottom: 7rem;
 }
 
 .text-center{
@@ -1964,6 +1972,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-brand-pink:hover{
   --tw-text-opacity: 1;
   color: rgb(252 39 143 / var(--tw-text-opacity));
+}
+
+.hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:transition-all:hover{
@@ -2451,8 +2464,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 50%;
   }
 
+  .xl\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .xl\:flex-col{
     flex-direction: column;
+  }
+
+  .xl\:gap-9{
+    gap: 2.25rem;
   }
 
   .xl\:px-5{
