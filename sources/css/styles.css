@@ -1323,6 +1323,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 12px;
 }
 
+.p-\[30px\]{
+  padding: 30px;
+}
+
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -2504,6 +2508,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 350px){
+  .xs\:flex-row{
+    flex-direction: row;
+  }
+
   .xs\:gap-8{
     gap: 2rem;
   }
